@@ -1,5 +1,7 @@
 config.json
 
+notes.txt
+
 # Logs
 logs
 *.log

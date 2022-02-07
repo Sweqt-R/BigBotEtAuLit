@@ -4,22 +4,5 @@ server_ID = 940006621772382208
 https://discord.com/api/oauth2/authorize?client_id=940005426924224603&permissions=8&scope=bot%20applications.commands
 
 
-client.once('ready', () => {
-	console.log('Ready!');
-});
-
-client.on('interactionCreate', async interaction => {
-	if (!interaction.isCommand()) return;
-
-    const command = client.commands.get(interaction.commandName);
-
-    if (!command) return;
-
-    try {
-        await command.execute(interaction);
-    } catch (error) {
-        console.error(error);
-        await interaction.reply({content: 'LOGGER.error : index.js error while executing command', ephemeral: true});
-    }
-    
-});
+Multiple dungeons (specifics)
+Tazavesh (hm & nm)
